@@ -1,0 +1,46 @@
+#menu {
+
+    margin: 5% 50% 0% 10%;
+    width: 70rem;
+}
+
+#top {
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
+
+.but {
+    margin-right: 5%;
+    font-family: 'Oswald', sans-serif;
+}
+
+button {
+    width: 10%;
+}
+
+#content {
+    margin: 5% 10%;
+
+}
+
+#htmlCode {
+    width: 35%;
+    height: 25rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#cssCode {
+    width: 35%;
+    height: 25rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#output {
+    height: 25rem;
+    width: 45%;
+    margin-left: 50%;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
