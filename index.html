@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="stylesheet" href="jquery-3.6.0.min.js">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Josefin+Sans:ital,wght@0,700;1,700&display=swap"
+          rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap"
+          rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <title>HTML & CSS COMPILER</title>
+     <link rel="stylesheet" href="style.css">
+
+     <style>
+         
+     </style>
+
+</head>
+
+<body>
+
+     <style id="cssStyle">
+          /* your css style be overwrite here */
+     </style>
+     <div id="menu" class="mr-lg-3">
+          <p id="top" class="bg-dark text-white d-inline-block p-md-2 but">Online Compiler</p>
+
+          <button id="indexHtml" class="btn btn-light but">index.html</button>
+          <button id="styleCss" class="btn btn-light but">style.css</button>
+          <button class="btn btn-primary but" onclick="run()">RUN</button>
+          <hr>
+     </div>
+     <div id="content">
+          <textarea placeholder="HTML code" id="htmlCode" class="border-3 position-absolute p-md-4"
+               rows="10"></textarea>
+          <textarea placeholder="CSS code" id="cssCode" class="border-3 position-absolute p-md-4" rows="10"></textarea>
+          <div id="output" class="border border-dark p-md-4">
+               Output will be displayed here
+               <!-- output overwritten here -->
+          </div>
+     </div>
+
+     <script type="text/javascript">
+          function run() {
+               var hc = document.getElementById("htmlCode").value;
+               var cc = document.getElementById("cssCode").value;
+               document.getElementById("output").innerHTML = hc;
+               document.getElementById("cssStyle").innerHTML = cc;
+
+          }
+     </script>
+
+     <script>
+          $(document).ready(function () {
+               $("#cssCode").hide();
+               $("#indexHtml").click(function () {
+                    $("#cssCode").hide();
+                    $("#htmlCode").show();
+               });
+               $("#styleCss").click(function () {
+                    $("#htmlCode").hide();
+                    $("#cssCode").show();
+               });
+          });
+     </script>
+</body>
+
+</html>
