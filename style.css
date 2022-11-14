@@ -12,11 +12,12 @@
 .but {
     margin-right: 5%;
     font-family: 'Oswald', sans-serif;
+    width:10%;
 }
 
-button {
+/* button {
     width: 10%;
-}
+} */
 
 #content {
     margin: 5% 10%;
